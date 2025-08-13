@@ -14,5 +14,13 @@ export default defineNuxtConfig({
             ]
         }
     },
-    devtools: { enabled: true }
+    devtools: { enabled: true },
+    vite: {
+        server: {
+            allowedHosts: [
+                '1-shot-gpt5-nuxt-todo-app-ufba8qwyjocorozgl70kkk9e.ide.127-0-0-1.sslip.io',
+                'localhost' // Optional: for local development
+            ]
+        }
+    }
 })
